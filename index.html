@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inika:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <title>TODO App</title>
+</head>
+
+<body>
+    <div class="bg-img"></div>
+
+    <div class="todo-container todo-container-40">
+        <div class="header">
+            <h1>T O D O</h1>
+            <div class="dark-mode">
+                <i class="ri-sun-fill light mode-icon"></i>
+                <i class="ri-moon-fill dark hidden mode-icon"></i>
+            </div>
+        </div>
+
+        <div class="input-box box-dark">
+            <div class="circle small-bg-dark">
+            </div>
+            <form>
+                <input placeholder="Create a new todo..." type="text" id="todo-input" class="dark-text">
+            </form>
+        </div>
+        <div class="todo-lists box-dark">
+
+            <div class="navigations">
+                <p class="item-left"> 0 items left </p>
+                <div class="btns">
+                    <button class="all-btn btns-color btns-dark">All</button>
+                    <button class="active-btn btns-dark">Active</button>
+                    <button class="completed-btn btns-dark">Completed</button>
+                </div>
+                <button class="clear-completed btns-dark">Clear Completed</button>
+            </div>
+        </div>
+
+        <div class="btns-2 box-dark">
+            <button class="all-btn btns-color btns-dark">All</button>
+            <button class="active-btn btns-dark">Active</button>
+            <button class="completed-btn btns-dark">Completed</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

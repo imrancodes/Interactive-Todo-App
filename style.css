@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #181824;
+    color: white;
+}
+
+.todo-container {
+    width: 800px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.light-bg {
+    background-color: #fafafa;
+}
+
+.light-text {
+    color: black;
+}
+
+.dark-text {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+.bg-img {
+    background-image: url('images/bg-desktop-dark.jpg');
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+}
+
+.bg-img-light {
+    background-image: url('images/bg-desktop-light.jpg');
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.mode-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.box-dark {
+    background-color: #25273c;
+}
+
+.input-box {
+    width: 100%;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    border-radius: 6px;
+    gap: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.todo-lists {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.circle,
+.circle-1 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle-bg{
+    background: linear-gradient(to right, #57ddff, #c058f3);
+}
+
+.circle-1-dark:not(.no-hover):hover {
+    background: linear-gradient(#25273c, #25273c) padding-box,
+        linear-gradient(to right, #57ddff, #c058f3) border-box;
+    border-radius: 50em;
+    border: 1px solid transparent;
+}
+
+.circle-1-light:not(.no-hover):hover {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #57ddff, #c058f3) border-box;
+    border-radius: 50em;
+    border: 1px solid transparent;
+}
+
+.check-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    color: white;
+    visibility: hidden;
+}
+
+.check-icon-show{
+    visibility: visible;
+}
+
+.todos-display{
+    display: flex;
+    gap: 20px;
+}
+
+#todo-input,
+.todos {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 70px;
+    font-size: 20px;
+    align-items: center;
+
+}
+
+.todos {
+    padding: 20px;
+    width: 100%;
+    word-break: break-all;
+    height: auto;
+}
+
+.todo-work{
+    line-height: 1.5;
+}
+
+.todos-text-completed{
+    color: #4d4f64;
+    text-decoration: line-through;
+}
+
+.small-bg-dark {
+    border: 1px solid #393a4c;
+}
+.small-bg-light {
+    border: 1px solid #d2d3db;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+}
+
+.navigations {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.navigations p {
+    color: #777a92;
+    font-weight: 600;
+}
+
+.btns {
+    display: flex;
+    gap: 30px;
+    border-radius: 6px;
+}
+
+.btns button, .btns-2 button {
+    font-weight: 700;
+}
+
+.btns-dark:not(.btns-color):hover {
+    color: white;
+}
+.btns-light:not(.btns-color):hover {
+    color: black;
+}
+
+.btns-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-block: 25px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #777a92;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.clear-completed {
+    font-weight: 500;
+}
+
+.delete-icon-dark {
+    color: #55576e;
+}
+
+.delete-icon-light {
+    color: #8c8c98;
+}
+
+.delete-todo {
+    margin-left: auto;
+    padding-right: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    visibility: hidden;
+}
+
+.todos:hover .delete-todo {
+    visibility: visible;
+}
+
+.btns-color{
+    color: #4976dc;
+}

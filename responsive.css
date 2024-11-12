@@ -1,0 +1,44 @@
+@media (max-width:1000px) {
+    .todo-container{
+        width: 600px;
+    }
+}
+
+@media (max-width:800px) {
+    .todo-container{
+        width: 500px;
+    }
+    .btns{
+        display: none;
+    }
+    .btns-2{
+        display: flex;
+        
+    }
+}
+
+@media (max-width:650px) {
+    .todo-container{
+        width: 400px;
+    }
+    .delete-todo{
+        visibility: visible;
+    }
+}
+
+@media (max-width:550px) {
+    .bg-img{
+        background-image: url('images/bg-mobile-dark.jpg');
+        background-size: cover;
+    }
+    .bg-img-light{
+        background-image: url('images/bg-mobile-light.jpg');
+        background-size: cover;
+    }
+}
+
+@media(max-width:410px){
+    .todo-container{
+        width: 300px;
+    }
+}
